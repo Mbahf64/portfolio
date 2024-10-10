@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { gsap } from "gsap"; // Import GSAP
 import { FaLocationDot } from "react-icons/fa6";
