@@ -65,11 +65,11 @@ export default function Home() {
 
             {/* Description text */}
             <p
-              className={`w-[80vw] lg:w-[70vw] 2xl:w-[55vw] text-center text-[32px] Manrope transition-opacity duration-1000 ${
+              className={`w-[80vw] lg:w-[70vw] 2xl:w-[55vw] text-center text-[24px] lg:text-[32px] Manrope transition-opacity duration-1000 ${
                 isVisible ? "opacity-100" : "opacity-0"
               }`}
             >
-              A Software Engineer with 2+ YOE building products across Fintech,
+              A Software Engineer with 2+ years of experience building products across Fintech,
               Social Media, Fashion, Healthcare, and AI. Expert in developing
               and maintaining robust software applications.
             </p>

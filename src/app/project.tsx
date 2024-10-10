@@ -160,9 +160,9 @@ const Project = () => {
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                      <p className="text-[1rem] font-semibold">01</p>
+                    <p className="text-[14px] font-medium mb-[3px]">01</p>
                       <a href="https://roamie.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <p className="text-[24px] lg:text-[3rem] noto-serif font-bold">
+                      <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Roamie
                         </p>
                       </a>
@@ -171,11 +171,9 @@ const Project = () => {
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
-                  <p className="text-[1rem] font-semibold">
-                    This is an eCommerce web application designed for purchasing
-                    customized glasses and eyewear. <br /> Tools: Typescript,
-                    Nextjs, Redux, TailwindCss, Playwright/Jest, Laravel, Git &
-                    Github, Vercel
+                  <p className="text-[18px] font-medium">
+                  This AI-powered app helps you find everything you need to know about a country before you travel. <br /> Tools: Typescript,
+                    Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
                      <a href="https://roamie.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
@@ -185,15 +183,15 @@ const Project = () => {
 
               {/* Project Card 2 */}
               <div
-                className="flex flex-col-reverse lg:flex-row w-full lg:h-[50vh] gap-9"
+                className="flex flex-col-reverse lg:flex-row w-full lg:h-[50vh] gap-9 "
                 ref={addToRefs}
               >
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                      <p className="text-[1rem] font-semibold">02</p>
+                    <p className="text-[14px] font-medium mb-[3px]">02</p>
                         <a href="https://seekstyle-waitlist.vercel.app/"target="_blank" rel="noopener noreferrer">
-                        <p className="text-[24px] lg:text-[3rem] noto-serif font-bold">
+                      <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Seek Style Waitlist
                         </p>
                       </a>
@@ -202,11 +200,9 @@ const Project = () => {
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
-                  <p className="text-[1rem] font-semibold">
-                    This is an eCommerce web application designed for purchasing
-                    customized glasses and eyewear. <br /> Tools: Typescript,
-                    Nextjs, Redux, TailwindCss, Playwright/Jest, Laravel, Git &
-                    Github, Vercel
+                  <p className="text-[18px] font-medium">
+                  This is the Seekstyle waitlist, designed to collect email addresses from our audience ahead of our launch. <br /> Tools: Typescript,
+                    Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
                     <a href="https://seekstyle-waitlist.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
@@ -240,10 +236,10 @@ const Project = () => {
 
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
-                    <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                      <p className="text-[1rem] font-semibold">03</p>
+                    <div className="flex flex-row items-end lg:items-start lg:flex-col justify-center gap-1">
+                    <p className="text-[14px] font-medium mb-[3px]">03</p>
                         <a href="https://seamsearchh.vercel.app/" target="_blank" rel="noopener noreferrer">
-                        <p className="text-[24px] lg:text-[3rem] noto-serif font-bold">
+                        <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Seam Search
                         </p>
                       </a>
@@ -252,11 +248,11 @@ const Project = () => {
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
-                  <p className="text-[1rem] font-semibold">
-                    This is an eCommerce web application designed for purchasing
-                    customized glasses and eyewear. <br /> Tools: Typescript,
-                    Nextjs, Redux, TailwindCss, Playwright/Jest, Laravel, Git &
-                    Github, Vercel
+                  <p className="text-[18px] font-medium">
+                  This AI-powered app helps you find the exact clothing you want to buy by searching every e-commerce store for you.
+                  
+                   <br /> Tools: Typescript,
+                    Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
                       <a href="https://seamsearchh.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
@@ -272,9 +268,9 @@ const Project = () => {
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                      <p className="text-[1rem] font-semibold">04</p>
+                    <p className="text-[14px] font-medium mb-[3px]">04</p>
                       <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer">
-                        <p className="text-[24px] lg:text-[3rem] noto-serif font-bold">
+                      <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Life Path Calculator
                         </p>
                       </a>
@@ -283,11 +279,10 @@ const Project = () => {
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
-                  <p className="text-[1rem] font-semibold">
-                    This is an eCommerce web application designed for purchasing
-                    customized glasses and eyewear. <br /> Tools: Typescript,
-                    Nextjs, Redux, TailwindCss, Playwright/Jest, Laravel, Git &
-                    Github, Vercel
+                  <p className="text-[18px] font-medium">
+                  Find your unique life path with our calculator and embark on a journey of 
+                  self-discovery to learn more about the beautiful person you are!<br /> Tools: Typescript,
+                    Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
                   <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer">
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
@@ -295,7 +290,7 @@ const Project = () => {
                 </div>
 
                 <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
-                    helllo
+                    
                 
                 </a>
               </div>

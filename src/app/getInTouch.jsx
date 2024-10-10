@@ -6,8 +6,15 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { IoLogoWhatsapp } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+
 const GetInTouch = () => {
   const textRef = useRef(null); // Create a ref for the text element
+
+
 
   useEffect(() => {
     const shakeAnimation = () => {
@@ -50,7 +57,7 @@ const GetInTouch = () => {
       >
         <div className="w-[90vw] lg:w-[80vw] h-full flex flex-col gap-20">
           <div className="flex flex-col w-full items-center justify-start">
-            <p className="noto-serif text-[3rem] font-semibold">
+            <p className="noto-serif text-[32px] lg:text-[3rem] font-semibold">
               Get In Touch!
             </p>
             <p className="comic-neue lg:text-[1.5rem] text-[18px] w-[90vw] lg:w-[60vw] ">
@@ -60,11 +67,11 @@ const GetInTouch = () => {
             </p>
           </div>
 
-          <div className="w-full h-full flex flex-col lg:flex-row items-start justify-center gap-9 ">
+          <div className="w-full h-full flex flex-col lg:flex-row items-start justify-center gap-[3rem] lg:gap-9 ">
             <div className="w-[45vh] h-full noto-serif flex flex-col gap-5 items-start justify-start">
               <div className="flex gap-3 items-center">
                 <FaLocationDot className="w-5 h-5" />
-                <p className="text-[1rem]">River State, Nigeria</p>
+                <p className="text-[1rem]">Port Harcourt, Nigeria</p>
               </div>
 
               <div className="flex gap-3 items-center">
@@ -159,16 +166,99 @@ const GetInTouch = () => {
             </div>
           </div>
 
-          <div className="flex flex-col w-full items-center justify-start mb-[3rem]">
-            <p
-              ref={textRef} // Attach the ref to the text element
-              className="noto-serif lg:text-[3rem] text-[2rem] font-semibold"
-            >
-              Don&apos;t be a stranger!🤙
-            </p>
-            <p className="comic-neue lg:text-[1.5rem] text-[18px] w-[90vw] lg:w-[60vw] ">
-              Let&apos;s connect, let&apos;s chat
-            </p>
+          <div className="h-[50vh] flex flex-col items-center justify-center">
+            <div className="h-[20vh] w-full flex flex-col items-center justify-center mb-10">
+              <div className="flex flex-col w-full items-center justify-start mb-[3rem]">
+                <p
+                  ref={textRef} // Attach the ref to the text element
+                  className="noto-serif lg:text-[3rem] text-[2rem] font-semibold"
+                >
+                  Don&apos;t be a stranger!🤙
+                </p>
+                <p className="comic-neue lg:text-[1.5rem] text-[18px] w-[90vw] lg:w-[60vw] ">
+                  Let&apos;s connect, let&apos;s chat
+                </p>
+              </div>
+
+           
+                <div className="w-full flex items-center flex-col h-full gap-[3rem] mb-[3rem]">
+                  <div className={`flex justify-center items-center gap-[3rem] mt-10`}>
+
+
+                    {/* Second Word */}
+                    <a
+                      href="https://www.linkedin.com/in/mbafavour/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div
+                        className="flex items-center gap-2 group hover:cursor-pointer transition-all duration-1000 delay-600 "
+                      >
+                        <FaLinkedinIn className="w-8 h-8 text-gray-500 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]" />
+                        <span className="hidden lg:flex text-[20px] font-medium Manrope transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]">
+                          Linkedin
+                        </span>
+                      </div>
+                    </a>
+
+                    {/* Third Word */}
+                    <a
+                      href="https://x.com/favourchima_"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div
+                        className="flex items-center gap-2 group hover:cursor-pointer transition-all duration-1000 delay-600 "
+                      >
+                        <FaXTwitter className="w-8 h-8 text-gray-500 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]" />
+                        <span className="hidden lg:flex text-[20px] font-medium Manrope transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]">
+                          Twitter
+                        </span>
+                      </div>
+                    </a>
+
+                    {/* Fourth Word */}
+                    <a
+                     href="https://wa.me/+2348101054679?text=Hello Favour, How are you doing?"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                    <div
+                        className="flex items-center gap-2 group hover:cursor-pointer transition-all duration-1000 delay-600 "
+                      >
+                      <IoLogoWhatsapp className="w-8 h-8 text-gray-500 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]" />
+                        <span className="hidden lg:flex text-[20px] font-medium Manrope transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]">
+                          Whatsapp
+                        </span>
+                      </div>
+                    </a>
+
+
+                    <a
+                      href="https://www.instagram.com/mbafavourc/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div
+                        className="flex items-center gap-2 group hover:cursor-pointer transition-all duration-1000 delay-600 "
+                      >
+                        <FaInstagram className="w-8 h-8 text-gray-500 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]" />
+                        <span className="hidden lg:flex text-[20px] font-medium Manrope transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]">
+                          Instagram
+                        </span>
+                      </div>
+                    </a>
+
+
+                  </div>
+
+                  <p className="noto-serif lg:text-[1.5rem] text-[16px] w-[90vw] lg:w-[60vw] text-gray-500 mt-[3rem]">
+                    © Copyright - Favour C.M 2024
+                  </p>
+                </div>
+
+           
+            </div>
           </div>
         </div>
       </motion.div>
