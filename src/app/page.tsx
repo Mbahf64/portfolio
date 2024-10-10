@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import React from "react";
 import Hero from "./hero";
 import Header from "./header";
 import WhatIDo from "./whatIDo";
@@ -9,13 +9,7 @@ import Project from "./project";
 import Getintouch from "./getInTouch";
 
 const page = () => {
-  // useEffect(() => {
-  //   (async () => {
-  //     const LocomotiveScroll = (await import("locomotive-scroll")).default;
-
-  //     const locomotiveScroll = new LocomotiveScroll();
-  //   })();
-  // }, []);
+ 
 
   return (
     <div className="w-full h-full div">

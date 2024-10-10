@@ -6,8 +6,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
-
-const getinTouch = () => {
+const GetInTouch = () => {
   const textRef = useRef(null); // Create a ref for the text element
 
   useEffect(() => {
@@ -38,15 +37,6 @@ const getinTouch = () => {
     shakeAnimation(); // Initialize the shaking animation
   }, []);
 
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-
-  
-
   const inputStyles =
     "w-full bg-transparent border-b border-black text-black pb-2 focus:outline-none pt-8 focus:border-black transition-all peer outline-none ring-0 focus:ring-0";
 
@@ -58,22 +48,20 @@ const getinTouch = () => {
         animate={{ opacity: 1, scale: 1 }} // Animate to full size and visibility
         transition={{ duration: 1.2, ease: "easeInOut" }} // Smooth animation over 1.2s
       >
-        <div className="w-[90vw] lg:w-[80vw] h-full flex flex-col  gap-20">
+        <div className="w-[90vw] lg:w-[80vw] h-full flex flex-col gap-20">
           <div className="flex flex-col w-full items-center justify-start">
             <p className="noto-serif text-[3rem] font-semibold">
               Get In Touch!
             </p>
             <p className="comic-neue lg:text-[1.5rem] text-[18px] w-[90vw] lg:w-[60vw] ">
-              I’m currently open to joining a new team of creative developers.
+              I&apos;m currently open to joining a new team of creative developers.
               Also, if you have a question, proposal, idea or just want to say
-              hi, Go ahead.
+              hi, go ahead.
             </p>
           </div>
 
           <div className="w-full h-full flex flex-col lg:flex-row items-start justify-center gap-9 ">
-
             <div className="w-[45vh] h-full noto-serif flex flex-col gap-5 items-start justify-start">
-              {/* <p className="text-[3rem] noto-serif font-bold text-left leading-none">My Story</p> */}
               <div className="flex gap-3 items-center">
                 <FaLocationDot className="w-5 h-5" />
                 <p className="text-[1rem]">River State, Nigeria</p>
@@ -91,9 +79,7 @@ const getinTouch = () => {
             </div>
 
             <div className="w-[90vw] lg:w-[55vw] h-full flex flex-col gap-[4rem] comic-neue">
-              <form
-                className="w-full max-w-[100vw] lg:max-w-[55vw] space-y-12"
-              >
+              <form className="w-full max-w-[100vw] lg:max-w-[55vw] space-y-12">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                   {/* Name Field */}
                   <div className="relative flex flex-col gap-11">
@@ -112,7 +98,7 @@ const getinTouch = () => {
                   </div>
 
                   {/* Email Field */}
-                  <div className="relative  flex flex-col gap-11">
+                  <div className="relative flex flex-col gap-11">
                     <input
                       type="email"
                       id="email"
@@ -164,7 +150,7 @@ const getinTouch = () => {
                 <div className="w-full flex items-start">
                   <button
                     type="submit"
-                    className=" mt-8 px-8 py-2 border border-black text-black rounded-full hover:bg-white hover:text-black transition-all duration-300 focus:outline-none"
+                    className="mt-8 px-8 py-2 border border-black text-black rounded-full hover:bg-white hover:text-black transition-all duration-300 focus:outline-none"
                   >
                     Send message
                   </button>
@@ -178,24 +164,16 @@ const getinTouch = () => {
               ref={textRef} // Attach the ref to the text element
               className="noto-serif lg:text-[3rem] text-[2rem] font-semibold"
             >
-              Don't be a stranger!🤙
+              Don&apos;t be a stranger!🤙
             </p>
             <p className="comic-neue lg:text-[1.5rem] text-[18px] w-[90vw] lg:w-[60vw] ">
-              Let's connect, let's chat
+              Let&apos;s connect, let&apos;s chat
             </p>
           </div>
         </div>
-
-
       </motion.div>
-
-
-
     </div>
-
-
   );
 };
 
-export default getinTouch;
-
+export default GetInTouch;

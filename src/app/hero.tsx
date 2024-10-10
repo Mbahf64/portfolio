@@ -7,6 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
+import Image from "next/image";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,11 +42,13 @@ export default function Home() {
             {/* Elegant border with pulsating gradient */}
             <div className="border-container relative w-[190px] h-[190px] rounded-full p-1 bg-gradient-to-r from-green-500 via-indigo-500 to-cyan-400 animate-elegant-glow">
               {/* Static profile image */}
-              <img
-                className="w-full h-full rounded-full"
-                src="/Favour.jpg"
-                alt="profile"
-              />
+              <Image
+  className="w-full h-full rounded-full"
+  src="/Favour.jpg"
+  alt="profile"
+  width={190}
+  height={190} // You need to specify the width and height
+/>
             </div>
           </div>
 
@@ -57,7 +60,7 @@ export default function Home() {
                 isVisible ? "opacity-100" : "opacity-0"
               }`}
             >
-              Hi, I'm Favour Mba
+              Hi, I&apos;m Favour Mba
             </p>
 
             {/* Description text */}

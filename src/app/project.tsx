@@ -52,7 +52,7 @@ const Project = () => {
     projectRefs.current.forEach((projectRef, index) => {
       if (projectRef) {
         const screenWidth = window.innerWidth;
-        let startValue = screenWidth > 1024 ? "top 80%" : "top 85%"; // Start when cards are in the viewport
+        const startValue = screenWidth > 1024 ? "top 80%" : "top 85%"; // Start when cards are in the viewport
 
         // Cards will alternate direction (left for odd indexes, right for even)
         const xValue = index % 2 === 0 ? -200 : 200;
@@ -81,7 +81,7 @@ const Project = () => {
     helloRefs.current.forEach((helloRef) => {
       if (helloRef) {
         // Create the wiggle animation with hover effect
-        let wiggleTimeline = gsap.to(helloRef, {
+        const wiggleTimeline = gsap.to(helloRef, {
           rotation: 5, // Rotate 5 degrees
           duration: 0.2,
           ease: "power1.inOut",
