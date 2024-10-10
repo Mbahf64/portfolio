@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const whatIDo = () => {
   return (
-    <div className="what-i-do-content flex items-center justify-center mt-20">
+    <div className="what-i-do-content flex items-center justify-center mt-20" id="my-story">
       <motion.div
         className="text-center"
         initial={{ opacity: 0, scale: 0.8 }} // Start invisible and smaller
@@ -18,19 +18,19 @@ const whatIDo = () => {
 
             <div className="w-[90vw] lg:w-[70vw] h-full flex flex-col gap-[1rem] lg:gap-[4rem] comic-neue">
               <p className="text-[16px] lg:text-[24px] text-left">
-                Hello! My name is Eniola, I am experienced in converting ideas
+                Hello! My name is Favour, I am experienced in converting ideas
                 into scalable software products and building solutions that runs
-                on the internet. Over the last 5 years, i've developed products
-                for businesses and startups globally, with a focus on top notch
+                on the internet. Over the last 2 years, i've developed products
+                for businesses, with a focus on top notch
                 quality, accessibility, compatibility and enjoyable user
                 experiences.
               </p>
 
               <p className="text-[16px] lg:text-[24px] text-left">
                 What I work with : <br />
-                Languages: Javascript, Typescript, C#. <br />
+                Languages: Javascript, Typescript. <br />
                 Technologies: Reactjs, Redux, Nextjs, Nodejs, Express, Git &
-                Gthub, PostgreSQL, AWS, E2E Testing/Playwright/Jest, Redis,
+                Gthub, E2E Testing/Playwright/Cypress, Redis,
                 TailwindCss, Firebase, Mongo DB, Git, Netlify, Vercel, Figma.
               </p>
             </div>

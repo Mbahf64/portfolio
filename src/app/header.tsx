@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import gsap from "gsap";
 
-const Header = () => {
+const Header: React.FC = () => {
   useEffect(() => {
     // GSAP hover animations for nav items
-    const navItems = document.querySelectorAll('.nav-item');
+    const navItems = document.querySelectorAll<HTMLElement>('.nav-item');
 
     navItems.forEach(item => {
       item.addEventListener('mouseenter', () => {
@@ -35,6 +35,13 @@ const Header = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId: string): void => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="w-full flex items-center justify-center mt-5">
       <div
@@ -44,9 +51,26 @@ const Header = () => {
         <p className="zen-dots text-[16px]">Mba Favour</p>
 
         <div className="hidden lg:flex gap-5">
-          <p className="Manrope text-[16px] font-semibold cursor-pointer nav-item">My Story</p>
-          <p className="Manrope text-[16px] font-semibold cursor-pointer nav-item">My Projects</p>
-          <p className="Manrope text-[16px] font-semibold cursor-pointer nav-item">My Resume</p>
+          <p
+            className="Manrope text-[16px] font-semibold cursor-pointer nav-item"
+            onClick={() => scrollToSection('my-story')} // Scroll to My Story
+          >
+            My Story
+          </p>
+          <p
+            className="Manrope text-[16px] font-semibold cursor-pointer nav-item"
+            onClick={() => scrollToSection('my-projects')} // Scroll to My Projects
+          >
+            My Projects
+          </p>
+          <a
+            href="path/to/your/resume.pdf" // Link to your resume
+            target="_blank"
+            rel="noopener noreferrer"
+            className="Manrope text-[16px] font-semibold cursor-pointer nav-item"
+          >
+            My Resume
+          </a>
         </div>
       </div>
     </div>

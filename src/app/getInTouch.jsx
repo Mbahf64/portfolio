@@ -1,11 +1,43 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { gsap } from "gsap"; // Import GSAP
 import { FaLocationDot } from "react-icons/fa6";
 import { IoCallSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
+
 const getinTouch = () => {
+  const textRef = useRef(null); // Create a ref for the text element
+
+  useEffect(() => {
+    const shakeAnimation = () => {
+      const animationTimeline = gsap.timeline({
+        repeat: -1, // Infinite loop
+        repeatDelay: 5, // Pause for 5 seconds before repeating
+      });
+
+      animationTimeline
+        .to(textRef.current, {
+          x: 5, // Shake to the right
+          duration: 0.1,
+          ease: "power1.inOut",
+        })
+        .to(textRef.current, {
+          x: -5, // Shake to the left
+          duration: 0.1,
+          ease: "power1.inOut",
+        })
+        .to(textRef.current, {
+          x: 0, // Back to the original position
+          duration: 0.1,
+          ease: "power1.inOut",
+        });
+    };
+
+    shakeAnimation(); // Initialize the shaking animation
+  }, []);
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -13,11 +45,7 @@ const getinTouch = () => {
     message: "",
   });
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log(formData);
-  };
+  
 
   const inputStyles =
     "w-full bg-transparent border-b border-black text-black pb-2 focus:outline-none pt-8 focus:border-black transition-all peer outline-none ring-0 focus:ring-0";
@@ -64,7 +92,6 @@ const getinTouch = () => {
 
             <div className="w-[90vw] lg:w-[55vw] h-full flex flex-col gap-[4rem] comic-neue">
               <form
-                onSubmit={handleSubmit}
                 className="w-full max-w-[100vw] lg:max-w-[55vw] space-y-12"
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -147,11 +174,14 @@ const getinTouch = () => {
           </div>
 
           <div className="flex flex-col w-full items-center justify-start mb-[3rem]">
-            <p className="noto-serif lg:text-[3rem] text-[2rem] font-semibold">
-            Don't be a stranger!🤙
+            <p
+              ref={textRef} // Attach the ref to the text element
+              className="noto-serif lg:text-[3rem] text-[2rem] font-semibold"
+            >
+              Don't be a stranger!🤙
             </p>
             <p className="comic-neue lg:text-[1.5rem] text-[18px] w-[90vw] lg:w-[60vw] ">
-            Let's connect, let's chat
+              Let's connect, let's chat
             </p>
           </div>
         </div>
@@ -168,3 +198,4 @@ const getinTouch = () => {
 };
 
 export default getinTouch;
+

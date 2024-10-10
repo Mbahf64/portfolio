@@ -74,13 +74,17 @@ const WhatIDo = () => {
             </p>
           </div>
 
+
+          <div className="h-full border-l-2 border-gray-400 mx-4 my-[3rem]"></div>
+
+
           {/* Second Section */}
           <div ref={section2Ref} className="flex flex-col gap-8 text-center">
             <p className="noto-serif text-xl font-semibold">
               Building seamless web solutions that bring concepts to life.
             </p>
             <p className="comic-neue">
-              Strategic, user-focused solutions designed for exceptional experiences.
+              Strategic user-focused solutions designed for exceptional experiences.
             </p>
           </div>
         </div>
