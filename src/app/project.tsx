@@ -12,7 +12,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Project = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const projectRefs = useRef<HTMLDivElement[]>([]); // To store all project div refs
-  const helloRefs = useRef<HTMLDivElement[]>([]); // To store all "hello" div refs
+  const helloRefs = useRef<HTMLAnchorElement[]>([]); // To store all "hello" div refs
 
   // To add refs to all project elements
   const addToRefs = (el: HTMLDivElement) => {
@@ -21,8 +21,8 @@ const Project = () => {
     }
   };
 
-  // To add refs to "hello" divs
-  const addHelloRefs = (el: HTMLDivElement) => {
+  // Callback to add the anchor to the refs array
+  const addHelloRefs = (el: HTMLAnchorElement | null) => {
     if (el && !helloRefs.current.includes(el)) {
       helloRefs.current.push(el);
     }
@@ -142,7 +142,11 @@ const Project = () => {
                 ref={addToRefs}
               >
            
-           <a href="https://roamie.vercel.app/" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
+           <a href="https://roamie.vercel.app/" 
+           target="_blank" rel="noopener noreferrer" 
+           className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " 
+           ref={addHelloRefs}
+           >
                     <img
                       src="./roamie.png"
                       alt="roamie"
