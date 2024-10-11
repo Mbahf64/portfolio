@@ -132,7 +132,7 @@ export default function Home() {
             >
               <FaXTwitter className="w-8 h-8 text-gray-500 transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]" />
               <span className="hidden lg:flex text-[20px] font-medium Manrope transition-transform duration-500 group-hover:scale-110 group-hover:rotate-0 group-hover:text-[#1DA1F2]">
-                Twitter
+                Twitter(x)
               </span>
             </div>
           </a>
