@@ -121,7 +121,10 @@ const Project = () => {
   }, []);
 
   return (
-    <div className="what-i-do-content flex items-center justify-center my-24" id="my-projects">
+    <div
+      className="what-i-do-content flex items-center justify-center my-24"
+      id="my-projects"
+    >
       <motion.div
         className="text-center"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -141,41 +144,54 @@ const Project = () => {
                 className="flex flex-col lg:flex-row w-full lg:h-[50vh] lg:gap-9"
                 ref={addToRefs}
               >
-           
-           <a href="https://roamie.vercel.app/" 
-           target="_blank" rel="noopener noreferrer" 
-           className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " 
-           ref={addHelloRefs}
-           >
-                    <img
-                      src="./roamie.png"
-                      alt="roamie"
-                     className="w-full h-full object-cover"
-                    />
-                  </a>
-               
+                <a
+                  href="https://roamie.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden "
+                  ref={addHelloRefs}
+                >
+                  <img
+                    src="./roamie.png"
+                    alt="roamie"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
 
                 {/* <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer"> */}
 
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                    <p className="text-[14px] font-medium mb-[3px]">01</p>
-                      <a href="https://roamie.vercel.app/" target="_blank" rel="noopener noreferrer">
-                      <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
+                      <p className="text-[14px] font-medium mb-[3px]">01</p>
+                      <a
+                        href="https://roamie.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Roamie
                         </p>
                       </a>
                     </div>
-                    <a href="https://roamie.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://roamie.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
                   <p className="text-[18px] font-medium">
-                  This AI-powered app helps you find everything you need to know about a country before you travel. <br /> Tools: Typescript,
-                    Nextjs, TailwindCss, Git & Github, Vercel
+                    This AI-powered app helps you find everything you need to
+                    know about a country before you travel. <br /> Tools:
+                    Typescript, Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
-                     <a href="https://roamie.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://roamie.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
                   </a>
                 </div>
@@ -189,35 +205,52 @@ const Project = () => {
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                    <p className="text-[14px] font-medium mb-[3px]">02</p>
-                        <a href="https://seekstyle-waitlist.vercel.app/"target="_blank" rel="noopener noreferrer">
-                      <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
+                      <p className="text-[14px] font-medium mb-[3px]">02</p>
+                      <a
+                        href="https://seekstyle-waitlist.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Seek Style Waitlist
                         </p>
                       </a>
                     </div>
-                        <a href="https://seekstyle-waitlist.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://seekstyle-waitlist.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
                   <p className="text-[18px] font-medium">
-                  This is the Seekstyle waitlist, designed to collect email addresses from our audience ahead of our launch. <br /> Tools: Typescript,
-                    Nextjs, TailwindCss, Git & Github, Vercel
+                    This is the Seekstyle waitlist, designed to collect email
+                    addresses from our audience ahead of our launch. <br />{" "}
+                    Tools: Typescript, Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
-                    <a href="https://seekstyle-waitlist.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://seekstyle-waitlist.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
                   </a>
                 </div>
 
-                <a href="https://seekstyle-waitlist.vercel.app/" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
-                    <img
-                      src="./seek-style.png"
-                      alt="seek-style"
-                     className="w-full h-full object-cover"
-                    />
-                
-              </a>
-
+                <a
+                  href="https://seekstyle-waitlist.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden "
+                  ref={addHelloRefs}
+                >
+                  <img
+                    src="./seek-style.png"
+                    alt="seek-style"
+                    className="w-full h-full object-cover"
+                  />
+                </a>
               </div>
 
               {/* Project Card 3 */}
@@ -225,36 +258,53 @@ const Project = () => {
                 className="flex flex-col lg:flex-row w-full lg:h-[50vh] gap-9"
                 ref={addToRefs}
               >
-            <a href="https://seamsearchh.vercel.app/" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[62vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
-                    <img
-                      src="./seam-search.png"
-                      alt="seam-search"
-                     className="w-full h-full object-cover "
-                    />
-                
+                <a
+                  href="https://seamsearchh.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[90vw] lg:w-[62vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden "
+                  ref={addHelloRefs}
+                >
+                  <img
+                    src="./seam-search.png"
+                    alt="seam-search"
+                    className="w-full h-full object-cover "
+                  />
                 </a>
 
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex flex-row items-end lg:items-start lg:flex-col justify-center gap-1">
-                    <p className="text-[14px] font-medium mb-[3px]">03</p>
-                        <a href="https://seamsearchh.vercel.app/" target="_blank" rel="noopener noreferrer">
+                      <p className="text-[14px] font-medium mb-[3px]">03</p>
+                      <a
+                        href="https://seamsearchh.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
                           Seam Search
                         </p>
                       </a>
                     </div>
-                      <a href="https://seamsearchh.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://seamsearchh.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
                   <p className="text-[18px] font-medium">
-                  This AI-powered app helps you find the exact clothing you want to buy by searching every e-commerce store for you.
-                  
-                   <br /> Tools: Typescript,
-                    Nextjs, TailwindCss, Git & Github, Vercel
+                    This AI-powered app helps you find the exact clothing you
+                    want to buy by searching every e-commerce store for you.
+                    <br /> Tools: Typescript, Nextjs, TailwindCss, Git & Github,
+                    Vercel
                   </p>
-                      <a href="https://seamsearchh.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://seamsearchh.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
                   </a>
                 </div>
@@ -268,41 +318,65 @@ const Project = () => {
                 <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
-                    <p className="text-[14px] font-medium mb-[3px]">04</p>
-                      <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
-                      <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
-                          Humanitext 
+                      <p className="text-[14px] font-medium mb-[3px]">04</p>
+                      <a
+                        href="https://humani-text-ai.vercel.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
+                          Humanitext
                         </p>
                       </a>
                     </div>
-                    <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <a
+                      href="https://humani-text-ai.vercel.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
                   <p className="text-[18px] font-medium">
-                  Your AI companion that takes your words and transforms them into more natural, relatable, 
-                  and human-sounding expressions. Whether you're looking to paraphrase or just add that personal 
-                  touch.<br /> Tools: Typescript,
-                    Nextjs, TailwindCss, Git & Github, Vercel
+                    Your AI companion that takes your words and transforms them
+                    into more natural, relatable, and human-sounding
+                    expressions. Whether you&apos;re looking to paraphrase or
+                    just add that personal touch.
+                    <br /> Tools: Typescript, Nextjs, TailwindCss, Git & Github,
+                    Vercel
                   </p>
-                  <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
+
+                  <a
+                    href="https://humani-text-ai.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
                   </a>
                 </div>
 
-                <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
-                    
-                <img
-                      src="./human.png"
-                      alt="seam-search"
-                     className="w-full h-full object-cover "
-                    />
+                <a
+                  href="https://humani-text-ai.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden "
+                  ref={addHelloRefs}
+                >
+                  <img
+                    src="./human.png"
+                    alt="seam-search"
+                    className="w-full h-full object-cover "
+                  />
                 </a>
               </div>
             </div>
 
             {/* View more on GitHub section */}
-         <a href="https://github.com/Mbahf64" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/Mbahf64"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="flex items-center justify-center mt-8">
                 <p className="text-lg font-semibold">View more on my GitHub</p>
                 <MdArrowForward className="arrow w-6 h-6 ml-2 animate-pulse" />
