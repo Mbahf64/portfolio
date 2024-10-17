@@ -269,29 +269,34 @@ const Project = () => {
                   <div className="flex w-full items-center justify-between">
                     <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
                     <p className="text-[14px] font-medium mb-[3px]">04</p>
-                      <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer">
+                      <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
-                          Life Path Calculator
+                          Humanitext 
                         </p>
                       </a>
                     </div>
-                    <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
                       <LuExternalLink className="w-5 h-5 flex lg:hidden" />
                     </a>
                   </div>
                   <p className="text-[18px] font-medium">
-                  Find your unique life path with our calculator and embark on a journey of 
-                  self-discovery to learn more about the beautiful person you are!<br /> Tools: Typescript,
+                  Your AI companion that takes your words and transforms them into more natural, relatable, 
+                  and human-sounding expressions. Whether you're looking to paraphrase or just add that personal 
+                  touch.<br /> Tools: Typescript,
                     Nextjs, TailwindCss, Git & Github, Vercel
                   </p>
-                  <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer">
                     <LuExternalLink className="w-7 h-7 hidden lg:flex" />
                   </a>
                 </div>
 
-                <a href="https://your-external-link.com" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
+                <a href="https://humani-text-ai.vercel.app/" target="_blank" rel="noopener noreferrer"className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden " ref={addHelloRefs}>
                     
-                
+                <img
+                      src="./human.png"
+                      alt="seam-search"
+                     className="w-full h-full object-cover "
+                    />
                 </a>
               </div>
             </div>
