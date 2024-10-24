@@ -79,7 +79,7 @@ export default function Home() {
         <div className={`flex justify-center items-center gap-[3rem] mt-10`}>
           {/* First Word */}
           <a
-            href="your-resume-link.pdf"
+            href="https://docs.google.com/document/d/1PR5G8R2zQuc6yTVJnYETfqN66XScYPx3TOftWW1Rpzs/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
