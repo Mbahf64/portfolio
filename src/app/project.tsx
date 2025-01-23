@@ -140,6 +140,7 @@ const Project = () => {
 
             <div className="w-full h-full flex flex-col gap-[5rem] comic-neue">
               {/* Project Card 1 */}
+
               <div
                 className="flex flex-col lg:flex-row w-full lg:h-[50vh] lg:gap-9"
                 ref={addToRefs}
@@ -363,9 +364,69 @@ const Project = () => {
                   ref={addHelloRefs}
                 >
                   <img
-                    src="./human.png"
+                    src="./humanie_.png"
                     alt="seam-search"
-                    className="w-full h-full object-cover "
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              </div>
+
+              {/* Project Card 5 */}
+              <div
+                className="flex flex-col-reverse lg:flex-row w-full lg:h-[50vh] gap-9"
+                ref={addToRefs}
+              >
+                <div className="w-[90vw] lg:w-[40vw] text-left flex flex-col gap-5">
+                  <div className="flex w-full items-center justify-between">
+                    <div className="flex items-end lg:items-start lg:flex-col justify-center gap-1">
+                      <p className="text-[14px] font-medium mb-[3px]">05</p>
+                      <a
+                        href="https://Btnomic.com/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <p className="text-[24px] lg:text-[3rem] noto-serif font-semibold lg:font-bold">
+                          Btnomic
+                        </p>
+                      </a>
+                    </div>
+                    <a
+                      href="https://Btnomic.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LuExternalLink className="w-5 h-5 flex lg:hidden" />
+                    </a>
+                  </div>
+                  <p className="text-[18px] font-medium">
+                    Btnomic is a trading bot application designed for seamless
+                    forex and crypto trading. Users simply input the amount they
+                    wish to trade, select their preferred runtime, choose a
+                    plan, and pick the assets they want to trade. The bot
+                    generates profits at regular intervals during the trade.
+                    Once the trade completes, users receive their chosen profit
+                    percentage after 24 hours. <br /> Tools: Laravel, Nextjs,
+                    TailwindCss, Typescript
+                  </p>
+                  <a
+                    href="https://Btnomic.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LuExternalLink className="w-7 h-7 hidden lg:flex" />
+                  </a>
+                </div>
+                <a
+                  href="https://Btnomic.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-[90vw] lg:w-[60vw] h-[30vh] lg:h-full max-w-full border-2 border-gray-100 rounded-lg overflow-hidden"
+                  ref={addHelloRefs}
+                >
+                  <img
+                    src="./06.png"
+                    alt="btnomic"
+                    className="w-full h-full object-cover"
                   />
                 </a>
               </div>

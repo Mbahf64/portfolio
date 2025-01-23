@@ -69,9 +69,8 @@ export default function Home() {
                 isVisible ? "opacity-100" : "opacity-0"
               }`}
             >
-              A Software Engineer with 2+ years of experience building products across Fintech,
-              Social Media, Fashion, Healthcare, and AI. Expert in developing
-              and maintaining robust software applications.
+              A Full Stack Developer(Frontend-heavy) with 2+ years of experience building products across Social Media, 
+              Fashion, and AI. Specializing in developing and maintaining robust software applications.
             </p>
           </div>
         </div>
@@ -79,7 +78,7 @@ export default function Home() {
         <div className={`flex justify-center items-center gap-[3rem] mt-10`}>
           {/* First Word */}
           <a
-            href="https://docs.google.com/document/d/1PR5G8R2zQuc6yTVJnYETfqN66XScYPx3TOftWW1Rpzs/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1NvQJGm_J7FTbZmLykkHqErBL2t4_cj2iuQzyvIYajm8/edit?tab=t.0"
             target="_blank"
             rel="noopener noreferrer"
           >

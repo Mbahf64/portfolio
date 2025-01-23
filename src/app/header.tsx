@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             My Projects
           </p>
           <a
-            href="path/to/your/resume.pdf" // Link to your resume
+            href="https://docs.google.com/document/d/1NvQJGm_J7FTbZmLykkHqErBL2t4_cj2iuQzyvIYajm8/edit?tab=t.0" // Link to your resume
             target="_blank"
             rel="noopener noreferrer"
             className="Manrope text-[16px] font-semibold cursor-pointer nav-item"

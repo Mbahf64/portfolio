@@ -253,7 +253,7 @@ const GetInTouch = () => {
                   </div>
 
                   <p className="noto-serif lg:text-[1.5rem] text-[16px] w-[90vw] lg:w-[60vw] text-gray-500 mt-[3rem]">
-                    © Copyright - Favour C.M 2024
+                  © Copyright - Favour C.M {new Date().getFullYear()}
                   </p>
                 </div>
 

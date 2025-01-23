@@ -30,10 +30,10 @@ const whatIDo = () => {
 
               <p className="text-[16px] lg:text-[24px] text-left">
                 What I work with: <br />
-                Languages: JavaScript, TypeScript. <br />
-                Technologies: ReactJS, Redux, Next.js, Node.js, Express, Git &amp;
-                GitHub, E2E Testing/Playwright/Cypress, Redis,
-                TailwindCSS, Firebase, MongoDB, Git, Netlify, Vercel, Figma.
+                Languages: JavaScript, TypeScript, PHP. <br />
+                Technologies: ReactJS, NextJS, Node.js, Express, Git &amp;
+                GitHub, E2E Testing/Playwright/Cypress, laravel,
+                TailwindCSS, MongoDB, Git, Netlify, Vercel, Figma.
               </p>
             </div>
           </div>
