@@ -78,7 +78,7 @@ export default function Home() {
         <div className={`flex justify-center items-center gap-[3rem] mt-10`}>
           {/* First Word */}
           <a
-            href="https://docs.google.com/document/d/1NvQJGm_J7FTbZmLykkHqErBL2t4_cj2iuQzyvIYajm8/edit?tab=t.0"
+            href="https://docs.google.com/document/d/1NvQJGm_J7FTbZmLykkHqErBL2t4_cj2iuQzyvIYajm8/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >
