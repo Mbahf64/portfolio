@@ -372,7 +372,7 @@ const Project = () => {
               </div>
 
               {/* Project Card 5 */}
-              <div
+{/*               <div
                 className="flex flex-col-reverse lg:flex-row w-full lg:h-[50vh] gap-9"
                 ref={addToRefs}
               >
@@ -429,7 +429,7 @@ const Project = () => {
                     className="w-full h-full object-cover"
                   />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* View more on GitHub section */}
